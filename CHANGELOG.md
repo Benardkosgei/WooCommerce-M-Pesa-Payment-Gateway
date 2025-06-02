@@ -19,6 +19,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 - Features removed in this version
 
+## [1.0.1] - 2024-01-15
+
+### Added
+- WooCommerce High-Performance Order Storage (HPOS) compatibility declaration
+- Support for WooCommerce custom order tables feature
+
+### Fixed
+- Plugin compatibility with WooCommerce HPOS feature
+- Eliminated compatibility warnings in WooCommerce admin
+
+### Changed
+- Updated plugin headers to include WooCommerce version compatibility
+- Enhanced plugin initialization to declare HPOS support
+
 ### Fixed
 - Bug fixes
 

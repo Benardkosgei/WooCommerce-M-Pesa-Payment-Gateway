@@ -232,7 +232,7 @@ Enable debug logging to troubleshoot issues:
 
 For technical support:
 
-1. Check the [GitHub Issues](https://github.com/yourusername/woocommerce-mpesa-gateway/issues)
+1. Check the [GitHub Issues](https://github.com/benardkosgei/woocommerce-mpesa-gateway/issues)
 2. Review [Safaricom Daraja Documentation](https://developer.safaricom.co.ke/docs)
 3. Contact your hosting provider for server-related issues
 

@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: WooCommerce M-PESA Payment Gateway
- * Plugin URI: https://github.com/yourusername/woocommerce-mpesa-gateway
+ * Plugin URI: https://github.com/benardkogei/woocommerce-mpesa-gateway
  * Description: M-PESA payment gateway for WooCommerce using Safaricom Daraja API. Enables secure mobile money payments for Kenyan customers.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Your Name
- * Author URI: https://yourwebsite.com
+ * Author URI: https://brotherbenard.com
  * License: GPL v2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: woocommerce-mpesa-gateway
@@ -15,6 +15,7 @@
  * WC requires at least: 3.0
  * WC tested up to: 8.4
  * Network: false
+ * Woo: 8.4.0:tested
  *
  * @package WooCommerce_Mpesa_Gateway
  */
@@ -25,7 +26,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Define plugin constants
-define('WC_MPESA_VERSION', '1.0.0');
+define('WC_MPESA_VERSION', '1.0.1');
 define('WC_MPESA_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('WC_MPESA_PLUGIN_PATH', plugin_dir_path(__FILE__));
 define('WC_MPESA_PLUGIN_BASENAME', plugin_basename(__FILE__));
@@ -82,6 +83,15 @@ function wc_mpesa_gateway_init() {
         return $methods;
     }
     add_filter('woocommerce_payment_gateways', 'wc_add_mpesa_gateway');
+    
+    /**
+     * Declare compatibility with WooCommerce features
+     */
+    add_action('before_woocommerce_init', function() {
+        if (class_exists(\Automattic\WooCommerce\Utilities\FeaturesUtil::class)) {
+            \Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility('custom_order_tables', __FILE__, true);
+        }
+    });
 }
 
 /**
