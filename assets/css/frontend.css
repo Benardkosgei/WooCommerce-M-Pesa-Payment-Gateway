@@ -1,0 +1,385 @@
+/**
+ * M-PESA Gateway Frontend Styles
+ */
+
+/* Payment Method Selection */
+.wc-mpesa-gateway {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+.payment_method_mpesa label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.payment_method_mpesa .mpesa-logo {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+}
+
+/* Payment Form */
+.wc-mpesa-form {
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+.wc-mpesa-form .form-row {
+    margin-bottom: 15px;
+}
+
+.wc-mpesa-form label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+    color: #333;
+}
+
+.wc-mpesa-form label .required {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.wc-mpesa-phone-number {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background: white;
+}
+
+.wc-mpesa-phone-number:focus {
+    border-color: #2c5530;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(44, 85, 48, 0.1);
+}
+
+.wc-mpesa-phone-number.error {
+    border-color: #e74c3c;
+}
+
+.wc-mpesa-phone-help {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #666;
+    font-style: italic;
+}
+
+/* Test Mode Notice */
+.wc-mpesa-test-mode-notice {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 20px;
+    color: #856404;
+}
+
+.wc-mpesa-test-mode-notice p {
+    margin: 0;
+    font-size: 0.95em;
+}
+
+.wc-mpesa-test-mode-notice strong {
+    color: #d63384;
+    font-weight: bold;
+}
+
+/* Payment Instructions */
+.wc-mpesa-instructions {
+    background: #e8f5e8;
+    border: 1px solid #c3e6c3;
+    border-radius: 6px;
+    padding: 15px;
+    margin: 15px 0;
+    color: #2c5530;
+}
+
+.wc-mpesa-instructions h4 {
+    margin: 0 0 10px 0;
+    color: #1e3a21;
+    font-size: 1.1em;
+}
+
+.wc-mpesa-instructions ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.wc-mpesa-instructions li {
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+/* Payment Pending Status */
+.wc-mpesa-pending-notice {
+    background: #d1ecf1;
+    border: 1px solid #bee5eb;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    color: #0c5460;
+}
+
+.wc-mpesa-pending-notice h3 {
+    margin: 0 0 15px 0;
+    color: #0c5460;
+    font-size: 1.3em;
+}
+
+.wc-mpesa-pending-notice p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+/* Loading State */
+.wc-mpesa-loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #2c5530;
+    border-radius: 50%;
+    animation: wc-mpesa-spin 1s linear infinite;
+    margin-right: 10px;
+}
+
+@keyframes wc-mpesa-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Payment Status Messages */
+.wc-mpesa-status-message {
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin: 15px 0;
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+.wc-mpesa-status-message.success {
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+}
+
+.wc-mpesa-status-message.error {
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
+
+.wc-mpesa-status-message.warning {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    color: #856404;
+}
+
+.wc-mpesa-status-message.info {
+    background: #d1ecf1;
+    border: 1px solid #bee5eb;
+    color: #0c5460;
+}
+
+/* Phone Number Formatting */
+.wc-mpesa-phone-format {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.wc-mpesa-country-code {
+    background: #f8f9fa;
+    border: 2px solid #ddd;
+    border-radius: 6px 0 0 6px;
+    padding: 12px 10px;
+    font-weight: bold;
+    color: #495057;
+    border-right: none;
+}
+
+.wc-mpesa-phone-input {
+    border-radius: 0 6px 6px 0 !important;
+    border-left: none !important;
+    flex: 1;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .wc-mpesa-form {
+        padding: 15px;
+        margin-top: 10px;
+    }
+    
+    .wc-mpesa-phone-number {
+        font-size: 16px; /* Prevent zoom on iOS */
+        padding: 12px;
+    }
+    
+    .wc-mpesa-pending-notice {
+        padding: 15px;
+    }
+    
+    .wc-mpesa-instructions {
+        padding: 12px;
+    }
+    
+    .payment_method_mpesa label {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .payment_method_mpesa .mpesa-logo {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .wc-mpesa-form {
+        padding: 12px;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    
+    .wc-mpesa-phone-format {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .wc-mpesa-country-code {
+        border-radius: 6px;
+        border-right: 2px solid #ddd;
+        text-align: center;
+    }
+    
+    .wc-mpesa-phone-input {
+        border-radius: 6px !important;
+        border-left: 2px solid #ddd !important;
+        margin-top: 10px;
+    }
+}
+
+/* WooCommerce Integration */
+.woocommerce-checkout .wc-mpesa-form {
+    background: transparent;
+    border: none;
+    padding: 20px 0;
+}
+
+.woocommerce .payment_methods .payment_method_mpesa {
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.woocommerce .payment_methods .payment_method_mpesa:last-child {
+    border-bottom: none;
+}
+
+/* Error States */
+.wc-mpesa-error {
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin: 10px 0;
+    font-size: 0.9em;
+}
+
+.wc-mpesa-error strong {
+    font-weight: bold;
+}
+
+/* Success States */
+.wc-mpesa-success {
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin: 10px 0;
+    font-size: 0.9em;
+}
+
+/* Network Operator Icons */
+.wc-mpesa-network-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 10px;
+    border-radius: 3px;
+}
+
+.wc-mpesa-network-safaricom {
+    background: #2c5530;
+}
+
+.wc-mpesa-network-airtel {
+    background: #ff0000;
+}
+
+.wc-mpesa-network-telkom {
+    background: #0066cc;
+}
+
+/* Accessibility */
+.wc-mpesa-form label:focus-within {
+    outline: 2px solid #2c5530;
+    outline-offset: 2px;
+}
+
+.wc-mpesa-phone-number:focus {
+    outline: none;
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .wc-mpesa-form {
+        border: 2px solid #000;
+    }
+    
+    .wc-mpesa-phone-number {
+        border: 2px solid #000;
+    }
+    
+    .wc-mpesa-phone-number:focus {
+        border-color: #000;
+        box-shadow: 0 0 0 3px #fff, 0 0 0 6px #000;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    .wc-mpesa-form {
+        background: #2a2a2a;
+        border-color: #555;
+        color: #fff;
+    }
+    
+    .wc-mpesa-phone-number {
+        background: #333;
+        border-color: #555;
+        color: #fff;
+    }
+    
+    .wc-mpesa-phone-help {
+        color: #ccc;
+    }
+    
+    .wc-mpesa-instructions {
+        background: #1a3a1a;
+        border-color: #2c5530;
+        color: #90ee90;
+    }
+}

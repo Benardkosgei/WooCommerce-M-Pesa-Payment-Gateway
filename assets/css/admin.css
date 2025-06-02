@@ -1,0 +1,368 @@
+/**
+ * M-PESA Gateway Admin Styles
+ */
+
+/* General Admin Styles */
+.wc-mpesa-admin {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+/* Settings Page Styles */
+.wc-settings .wc-mpesa-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.wc-mpesa-logo {
+    width: 32px;
+    height: 32px;
+}
+
+.wc-mpesa-test-mode-notice {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 4px;
+    padding: 12px;
+    margin: 10px 0;
+    color: #856404;
+}
+
+.wc-mpesa-test-mode-notice strong {
+    color: #d63384;
+}
+
+/* Configuration Status */
+.wc-mpesa-config-status {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 4px;
+    background: #f8f9fa;
+    border-left: 4px solid #28a745;
+}
+
+.wc-mpesa-config-status.error {
+    background: #f8d7da;
+    border-left-color: #dc3545;
+    color: #721c24;
+}
+
+.wc-mpesa-config-status.warning {
+    background: #fff3cd;
+    border-left-color: #ffc107;
+    color: #856404;
+}
+
+.wc-mpesa-config-status h4 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+}
+
+.wc-mpesa-config-status ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.wc-mpesa-config-status li {
+    margin: 5px 0;
+}
+
+.wc-mpesa-config-check {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.wc-mpesa-config-check.success::before {
+    content: "✓";
+    color: #28a745;
+    font-weight: bold;
+}
+
+.wc-mpesa-config-check.error::before {
+    content: "✗";
+    color: #dc3545;
+    font-weight: bold;
+}
+
+/* API Credentials Section */
+.wc-mpesa-credentials {
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+.wc-mpesa-credentials h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.wc-mpesa-help-text {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* Transaction Log Styles */
+.wc-mpesa-transaction-log {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+.wc-mpesa-transaction-log h3 {
+    background: #f8f9fa;
+    margin: 0;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+}
+
+.wc-mpesa-log-entry {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    font-family: monospace;
+    font-size: 0.9em;
+}
+
+.wc-mpesa-log-entry:last-child {
+    border-bottom: none;
+}
+
+.wc-mpesa-log-entry .timestamp {
+    color: #666;
+    font-weight: bold;
+}
+
+.wc-mpesa-log-entry .level {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.wc-mpesa-log-entry .level.info {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+.wc-mpesa-log-entry .level.error {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.wc-mpesa-log-entry .level.warning {
+    background: #fff3cd;
+    color: #856404;
+}
+
+/* Button Styles */
+.wc-mpesa-button {
+    background: #2c5530;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.wc-mpesa-button:hover {
+    background: #1e3a21;
+    color: white;
+}
+
+.wc-mpesa-button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.wc-mpesa-button.secondary {
+    background: #6c757d;
+}
+
+.wc-mpesa-button.secondary:hover {
+    background: #545b62;
+}
+
+/* Form Field Enhancements */
+.wc-mpesa-form-field {
+    margin-bottom: 20px;
+}
+
+.wc-mpesa-form-field label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.wc-mpesa-form-field input[type="text"],
+.wc-mpesa-form-field input[type="password"],
+.wc-mpesa-form-field textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.wc-mpesa-form-field input:focus,
+.wc-mpesa-form-field textarea:focus {
+    border-color: #2c5530;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(44, 85, 48, 0.2);
+}
+
+/* Documentation Links */
+.wc-mpesa-docs-link {
+    display: inline-block;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #2c5530;
+    font-size: 0.9em;
+}
+
+.wc-mpesa-docs-link:hover {
+    text-decoration: underline;
+}
+
+.wc-mpesa-docs-link::before {
+    content: "📖";
+    margin-right: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .wc-mpesa-credentials {
+        padding: 15px;
+    }
+    
+    .wc-mpesa-form-field input[type="text"],
+    .wc-mpesa-form-field input[type="password"],
+    .wc-mpesa-form-field textarea {
+        max-width: 100%;
+    }
+    
+    .wc-mpesa-config-status {
+        padding: 10px;
+    }
+}
+
+/* Loading Spinner */
+.wc-mpesa-loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #2c5530;
+    border-radius: 50%;
+    animation: wc-mpesa-spin 1s linear infinite;
+    margin-right: 10px;
+}
+
+@keyframes wc-mpesa-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Status Indicators */
+.wc-mpesa-status {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.wc-mpesa-status.active {
+    background: #d4edda;
+    color: #155724;
+}
+
+.wc-mpesa-status.inactive {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.wc-mpesa-status.testing {
+    background: #fff3cd;
+    color: #856404;
+}
+
+/* Tooltips */
+.wc-mpesa-tooltip {
+    position: relative;
+    cursor: help;
+}
+
+.wc-mpesa-tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+.wc-mpesa-tooltip:hover::after {
+    opacity: 1;
+}
+
+/* Accordion Styles */
+.wc-mpesa-accordion {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+.wc-mpesa-accordion-header {
+    background: #f8f9fa;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wc-mpesa-accordion-header:hover {
+    background: #e9ecef;
+}
+
+.wc-mpesa-accordion-content {
+    padding: 20px;
+    display: none;
+}
+
+.wc-mpesa-accordion-content.active {
+    display: block;
+}
+
+.wc-mpesa-accordion-toggle::after {
+    content: "▼";
+    transition: transform 0.3s ease;
+}
+
+.wc-mpesa-accordion-header.active .wc-mpesa-accordion-toggle::after {
+    transform: rotate(180deg);
+}

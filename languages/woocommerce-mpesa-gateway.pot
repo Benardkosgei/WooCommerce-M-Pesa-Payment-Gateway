@@ -1,0 +1,260 @@
+# WooCommerce M-PESA Payment Gateway Language Template
+# Copyright (C) 2024
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce M-PESA Payment Gateway 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/yourusername/woocommerce-mpesa-gateway/issues\n"
+"POT-Creation-Date: 2024-01-01 00:00:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: \n"
+
+#: woocommerce-mpesa-gateway.php:45
+msgid "M-PESA Gateway requires WooCommerce to be installed and active. You can download %s here."
+msgstr ""
+
+#: woocommerce-mpesa-gateway.php:82
+msgid "Please install and activate WooCommerce before activating the M-PESA Gateway plugin."
+msgstr ""
+
+#: woocommerce-mpesa-gateway.php:147
+msgid "Settings"
+msgstr ""
+
+#: woocommerce-mpesa-gateway.php:148
+msgid "API Docs"
+msgstr ""
+
+#: woocommerce-mpesa-gateway.php:158
+msgid "Documentation"
+msgstr ""
+
+#: woocommerce-mpesa-gateway.php:159
+msgid "Support"
+msgstr ""
+
+#: woocommerce-mpesa-gateway.php:172
+msgid "M-PESA Gateway"
+msgstr ""
+
+#: woocommerce-mpesa-gateway.php:173
+msgid "Please <a href=\"%s\">configure your M-PESA API credentials</a> to start accepting payments."
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:35
+msgid "M-PESA"
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:37
+msgid "Accept payments via M-PESA mobile money using Safaricom Daraja API."
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:86
+msgid "Enable/Disable"
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:88
+msgid "Enable M-PESA Payment"
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:92
+msgid "Title"
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:94
+msgid "This controls the title which the user sees during checkout."
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:99
+msgid "Description"
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:101
+msgid "Payment method description that the customer will see on your checkout."
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:102
+msgid "Pay securely using M-PESA mobile money."
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:106
+msgid "Instructions"
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:108
+msgid "Instructions that will be added to the thank you page and emails."
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:109
+msgid "You will receive an M-PESA prompt on your phone to complete the payment."
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:113
+msgid "Test mode"
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:114
+msgid "Enable Test Mode"
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:116
+msgid "Place the payment gateway in test mode using sandbox API credentials."
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:121
+msgid "Debug Log"
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:123
+msgid "Enable logging"
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:125
+msgid "Log M-PESA events, such as API requests, inside %s Note: this may log personal information. We recommend using this for debugging purposes only and deleting the logs when finished."
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:128
+msgid "API Credentials"
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:130
+msgid "Get your API credentials from the <a href=\"%s\" target=\"_blank\">Safaricom Daraja Portal</a>."
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:133
+msgid "Consumer Key"
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:135
+msgid "Get this from Safaricom Daraja Portal"
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:139
+msgid "Consumer Secret"
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:145
+msgid "Business Shortcode"
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:147
+msgid "Your M-PESA business shortcode (PayBill or Till Number)"
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:151
+msgid "Passkey"
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:153
+msgid "Lipa na M-PESA Online Passkey from Daraja Portal"
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:157
+msgid "Advanced Settings"
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:159
+msgid "Advanced configuration options for the M-PESA gateway."
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:162
+msgid "Payment Timeout"
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:164
+msgid "Time in seconds to wait for customer payment confirmation"
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:172
+msgid "Auto Complete Orders"
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:173
+msgid "Automatically complete orders after successful payment"
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:175
+msgid "Orders will be marked as completed automatically when payment is received."
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:190
+msgid "TEST MODE ENABLED"
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:190
+msgid "Use test phone number: 254708374149"
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:195
+msgid "M-PESA Phone Number"
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:197
+msgid "254712345678"
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:201
+msgid "Enter your M-PESA registered phone number (e.g., 254712345678)"
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:211
+msgid "M-PESA phone number is required."
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:218
+msgid "Invalid phone number format."
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:233
+msgid "Order not found."
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:250
+msgid "M-PESA payment initiated. Checkout request ID: %s"
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:273
+msgid "M-PESA payment initiation failed: %s"
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:348
+msgid "M-PESA payment completed. Receipt: %s, Amount: %s, Phone: %s"
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:366
+msgid "Payment failed"
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:368
+msgid "M-PESA payment failed: %s"
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:381
+msgid "Payment Pending"
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:382
+msgid "Please complete the payment on your phone when prompted. Your order will be processed once payment is confirmed."
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:405
+msgid "M-PESA receipt number not found for this order."
+msgstr ""
+
+#: includes/class-wc-mpesa-gateway.php:412
+msgid "M-PESA refund completed. Amount: %s, Reason: %s"
+msgstr ""
+
+#: includes/class-wc-mpesa-utils.php:25
+msgid "Phone number is required."
+msgstr ""
+
+#: includes/class-wc-mpesa-utils.php:40
+msgid "Invalid Kenyan phone number format. Please use format like 254712345678 or 0712345678."
+msgstr ""
+
+#: includes/class-wc-mpesa-utils.php:45
+msgid "Invalid Kenyan mobile number. Please provide a valid Safaricom, Airtel, or Telkom number."
+msgstr ""
